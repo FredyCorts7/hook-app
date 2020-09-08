@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './effect.css';
 import Message from './Message';
 
-export const SimpleForm = () => {
+const SimpleForm = () => {
   const [formState, setFormState] = useState({
     name: '',
     email: '',
@@ -54,3 +54,5 @@ export const SimpleForm = () => {
     </>
   );
 };
+
+export default SimpleForm;
