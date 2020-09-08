@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './effect.css';
+import Message from './Message';
 
 export const SimpleForm = () => {
   const [formState, setFormState] = useState({
@@ -25,7 +26,6 @@ export const SimpleForm = () => {
     <>
       <h1>useEffect</h1>
       <hr />
-
       <div className='form-group'>
         <input
           type='text'
@@ -37,6 +37,9 @@ export const SimpleForm = () => {
           onChange={handleInputChange}
         />
       </div>
+
+      {name === 'Camila' && <Message />}
+
       <div className='form-group'>
         <input
           type='email'
