@@ -9,6 +9,7 @@ import ReactDOM from 'react-dom';
 // import FocusScreen from './components/useRef/FocusScreen';
 // import RealExample from './components/useRef/RealExample';
 // import Layout from './components/useLayoutEffect/Layout';
-import Memorize from './components/memos/Memorize';
+// import Memorize from './components/memos/Memorize';
+import MemoHook from './components/memos/MemoHook';
 
-ReactDOM.render(<Memorize />, document.getElementById('root'));
+ReactDOM.render(<MemoHook />, document.getElementById('root'));
