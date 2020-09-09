@@ -7,6 +7,7 @@ import ReactDOM from 'react-dom';
 // import FormWithCustomHook from './components/useEffect/FormWithCustomHook';
 // import MultipleCustomHooks from './components/examples/MultipleCustomHooks';
 // import FocusScreen from './components/useRef/FocusScreen';
-import RealExample from './components/useRef/RealExample';
+// import RealExample from './components/useRef/RealExample';
+import Layout from './components/useLayoutEffect/Layout';
 
-ReactDOM.render(<RealExample />, document.getElementById('root'));
+ReactDOM.render(<Layout />, document.getElementById('root'));
