@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom';
 // import SimpleForm from './components/useEffect/SimpleForm';
 // import FormWithCustomHook from './components/useEffect/FormWithCustomHook';
 // import MultipleCustomHooks from './components/examples/MultipleCustomHooks';
-import FocusScreen from './components/useRef/FocusScreen';
+// import FocusScreen from './components/useRef/FocusScreen';
+import RealExample from './components/useRef/RealExample';
 
-ReactDOM.render(<FocusScreen />, document.getElementById('root'));
+ReactDOM.render(<RealExample />, document.getElementById('root'));
