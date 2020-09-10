@@ -4,6 +4,7 @@ import { todoReducer } from './todoReducer';
 
 import './styles.css';
 import { useForm } from '../../hooks/useForm';
+import TodoList from './TodoList';
 
 const init = () => {
   return JSON.parse(localStorage.getItem('todos')) || [];
@@ -105,28 +106,11 @@ const TodoApp = () => {
         </button>
       </form>
 
-      <ul className='list-group mt-4 container'>
-        <h3 className='text-center'>ToDo List</h3>
-
-        {todos.map((todo, index) => (
-          <li key={todo.id} className='list-group-item'>
-            <div className='row'>
-              <p
-                className={`${todo.done ? 'complete' : ''} col-8`}
-                onClick={() => handleToggle(todo.id)}
-              >
-                {index + 1}. {todo.title}
-              </p>
-              <button
-                className='btn btn-outline-danger col-4'
-                onClick={() => handleDelete(todo.id)}
-              >
-                Delete
-              </button>
-            </div>
-          </li>
-        ))}
-      </ul>
+      <TodoList
+        todos={todos}
+        handleDelete={handleDelete}
+        handleToggle={handleToggle}
+      />
     </div>
   );
 };
