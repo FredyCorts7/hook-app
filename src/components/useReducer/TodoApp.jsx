@@ -41,6 +41,15 @@ const TodoApp = () => {
     dispatch(action);
   };
 
+  const handleToggle = (todoId) => {
+    const action = {
+      type: 'toggle',
+      payload: todoId,
+    };
+
+    dispatch(action);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -102,7 +111,10 @@ const TodoApp = () => {
         {todos.map((todo, index) => (
           <li key={todo.id} className='list-group-item'>
             <div className='row'>
-              <p className='text-center col-8'>
+              <p
+                className={`${todo.done ? 'complete' : ''} col-8`}
+                onClick={() => handleToggle(todo.id)}
+              >
                 {index + 1}. {todo.title}
               </p>
               <button
