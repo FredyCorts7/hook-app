@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing to <MultipleCustomHooks /> should be the same component in initial state 1`] = `
+<div>
+  <h1>
+    BreakingBad Quotes
+  </h1>
+  <hr />
+  <div
+    className="alrt alert-info text-center"
+  >
+    Loading...
+  </div>
+</div>
+`;
+
+exports[`Testing to <MultipleCustomHooks /> should show information 1`] = `
+<div>
+  <h1>
+    BreakingBad Quotes
+  </h1>
+  <hr />
+  <blockquote
+    className="blockquote text-right"
+  >
+    <p
+      className="mb-0"
+    >
+      Everybody ignore to me
+    </p>
+    <footer
+      className="blockquote-footer"
+    >
+      Camila
+    </footer>
+  </blockquote>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <button
+        className="btn btn-warning col-6"
+        onClick={[Function]}
+      >
+        Previous quote
+      </button>
+      <button
+        className="btn btn-primary col-6"
+        onClick={[Function]}
+      >
+        Next quote
+      </button>
+    </div>
+  </div>
+</div>
+`;
