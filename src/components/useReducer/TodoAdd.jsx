@@ -10,6 +10,8 @@ const TodoAdd = ({ handleAddTodo }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (title.trim().length === 0 || description.trim().length === 0) return;
+
     const newTodo = {
       id: new Date().getTime(),
       title,
