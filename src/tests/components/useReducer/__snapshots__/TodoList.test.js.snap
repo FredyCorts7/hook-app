@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing to <TodoList /> should show succesfully 1`] = `
+<ul
+  className="list-group mt-4 container"
+>
+  <h3
+    className="text-center"
+  >
+    ToDo List
+  </h3>
+  <TodoListItem
+    handleDelete={[MockFunction]}
+    handleToggle={[MockFunction]}
+    index={0}
+    key="1"
+    todo={
+      Object {
+        "done": false,
+        "id": 1,
+        "title": "learn react",
+      }
+    }
+  />
+  <TodoListItem
+    handleDelete={[MockFunction]}
+    handleToggle={[MockFunction]}
+    index={1}
+    key="2"
+    todo={
+      Object {
+        "done": false,
+        "id": 2,
+        "title": "learn node",
+      }
+    }
+  />
+</ul>
+`;
